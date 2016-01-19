@@ -1,0 +1,509 @@
+.map .navbar-fixed-top {
+    margin-right: 301px
+}
+.map .navbar-inner {
+    padding: 0 10px
+}
+.map .navbar-inner a.referrer {
+    left: 198px
+}
+.map .nav.referred {
+    margin-left: 258px
+}
+#mapContainer {
+    height: 100%;
+    position: relative
+}
+#mapContainer img {
+    max-width: none
+}
+#mapContainer #map {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    right: 0
+}
+#mapContainer #map canvas.leaflet-tile {
+    font-weight: bold
+}
+#mapContainer #map div.map-distance {
+    position: absolute
+}
+#mapContainer #map div.map-distance span {
+    display: block;
+    position: relative;
+    top: -0.5em;
+    left: -50%;
+    border: 1px solid #808080;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 4px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 18px
+}
+#mapContainer #map div.map-label {
+    position: absolute
+}
+#mapContainer #map div.map-label span {
+    position: relative;
+    top: -0.5em;
+    left: -50%;
+    white-space: nowrap;
+    text-shadow: 1px 1px .5px #fff, -1px -1px .5px #fff, -1px 1px .5px #fff, 1px -1px .5px #fff;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    display: block;
+    text-align: center
+}
+#mapContainer #map div.map-label span small {
+    font-size: .9em;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff
+}
+#mapContainer #map div.map-label.light span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px
+}
+#mapContainer #map div.map-label.medium span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px
+}
+#mapContainer #map div.map-label.heavy span {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px
+}
+#mapContainer #map div.map-label.left span {
+    left: 0
+}
+#mapContainer #map div.map-label.right span {
+    left: -100%
+}
+#mapContainer.expanded {
+    margin-right: 0
+}
+#mapContainer.expanded .navbar-fixed-top {
+    margin-right: 0
+}
+#mapCoords {
+    z-index: 1000;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "Lucida Console", monospace;
+    background-color: #404040;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px
+}
+#mapControl {
+    z-index: 1000;
+    position: absolute;
+    top: 50px;
+    right: 10px
+}
+#mapControl div.btn-group {
+    float: right;
+    margin-left: 10px
+}
+#mapControl #mapType {
+    display: none
+}
+#sidebarContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+#sidebar {
+    position: relative;
+    height: 100%;
+    width: 300px;
+    border: 1px solid #808080;
+    border-width: 0 0 0 1px;
+    background-color: #f5f5f5
+}
+#sidebar tr:first-child td,
+#sidebar tr:first-child th {
+    border-top: 0
+}
+#sidebar.tip-open #sidebarTooltip {
+    display: block
+}
+#sidebar.editor-open #markerEdit {
+    display: block
+}
+#sidebar.tip-open #sidebarTips,
+#sidebar.editor-open #sidebarTips,
+#sidebar.tip-open #sidebarFooter,
+#sidebar.editor-open #sidebarFooter {
+    display: none
+}
+#sidebar #mapsearch {
+    position: relative
+}
+#sidebar #mapsearch #clearsearch {
+    position: absolute;
+    top: 4px;
+    left: 196px;
+    display: none;
+    font-size: 16px;
+    padding: 2px 4px
+}
+#sidebarBlock {
+    width: 300px;
+    height: 250px;
+    background-color: #808080
+}
+#sidebarToggles {
+    padding-top: 5px
+}
+#sidebarToggles div.btn-toolbar {
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd
+}
+#sidebarToggles div.btn-toolbar:first-child {
+    margin-top: 0
+}
+#sidebarToggles div.btn-toolbar div.btn-group {
+    margin: 0 5px
+}
+#sidebarToggles div.btn-toolbar div.btn-group button.iconToggle {
+    width: 111px
+}
+#sidebarToggles div.btn-toolbar div.btn-group button.iconToggleAll {
+    width: 136px
+}
+#sidebarToggles div.search {
+    margin: 5px 0;
+    padding: 0 5px;
+    border-bottom: 1px solid #ddd
+}
+#sidebarToggles div.search form {
+    margin-bottom: 5px
+}
+#sidebarToggles ul.dropdown-menu label {
+    display: block;
+    padding: 3px 15px;
+    line-height: 20px
+}
+#sidebarToggles ul.dropdown-menu label:hover {
+    background-color: #8b1515;
+    color: #fff
+}
+#sidebarToggles ul.dropdown-menu label input {
+    margin: 0 0 3px 0
+}
+#sidebarTips {
+    margin: 0 8px 8px 8px
+}
+#sidebarTips .well {
+    padding: 8px
+}
+#sidebarTips ul {
+    margin-bottom: 0;
+    margin-left: 15px
+}
+#markerEdit {
+    display: none;
+    margin: 0 8px 8px 8px;
+    overflow: auto;
+    position: absolute;
+    top: 408px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center
+}
+#markerEdit form {
+    text-align: left
+}
+#markerEdit form div.formControls {
+    text-align: center
+}
+#markerEdit form div.formControls input,
+#markerEdit form div.formControls button {
+    width: 110px
+}
+#markerEdit div.topControls {
+    margin-bottom: 10px
+}
+#markerEdit div.topControls button {
+    width: 117px;
+    margin: 0 5px
+}
+#markerEdit div.bottomControls button {
+    width: 117px
+}
+#markerEdit a {
+    width: 128px;
+    margin-bottom: 10px
+}
+#sidebarTooltip {
+    display: none;
+    margin: 0 8px 8px 8px;
+    overflow: auto;
+    position: absolute;
+    top: 408px;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+#sidebarTooltip .minimal {
+    display: none
+}
+#sidebarTooltip .well {
+    padding: 8px
+}
+#sidebarTooltip div.thumbnail {
+    width: 200px;
+    margin: 5px auto 13px auto
+}
+#sidebarTooltip button.close {
+    position: absolute;
+    top: 4px;
+    right: 4px
+}
+#sidebarTooltip table {
+    width: 100%;
+    margin-bottom: 0
+}
+#sidebarTooltip td.sublist {
+    display: none;
+    padding: 0 0 0 20px
+}
+#sidebarTooltip td>a {
+    font-weight: normal;
+    text-decoration: underline
+}
+#sidebarTooltip td,
+#sidebarTooltip th {
+    text-align: left
+}
+#sidebarTooltip td:last-child,
+#sidebarTooltip th:last-child {
+    text-align: right
+}
+#sidebarFooter {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px
+}
+#sidebarFooter a {
+    background-image: url('../img/logo-footer-black.png');
+    display: block;
+    width: 104px;
+    height: 43px;
+    margin: 0 auto;
+    opacity: .7
+}
+#sidebarFooter a:hover {
+    opacity: 1
+}
+#sidebarFooter div {
+    text-align: center;
+    font-size: 11px;
+    color: #333
+}
+#sidebarButton {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 300px;
+    border: 1px solid #808080;
+    border-right: 0;
+    background-color: #f5f5f5;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, right top, from(#e0e0e0), to(#f5f5f5));
+    background-image: -moz-linear-gradient(left, #e0e0e0, #f5f5f5);
+    background-image: -ms-linear-gradient(left, #e0e0e0, #f5f5f5);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #e0e0e0), color-stop(100%, #f5f5f5));
+    background-image: -webkit-linear-gradient(left, #e0e0e0, #f5f5f5);
+    background-image: -o-linear-gradient(left, #e0e0e0, #f5f5f5);
+    background-image: linear-gradient(left, #e0e0e0, #f5f5f5);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e0e0e0', endColorstr='#f5f5f5', GradientType=1);
+    height: 24px;
+    width: 20px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+#sidebarButton span.arrow {
+    margin: 6px 0 0 8px;
+    border-left: 6px solid #000;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: none;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: '';
+    opacity: .3;
+    filter: alpha(opacity=30)
+}
+#sidebarButton:hover span.arrow {
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+#sidebarButton.closed {
+    right: 0
+}
+#sidebarButton.closed span.arrow {
+    margin-left: 6px;
+    border-right: 6px solid #000;
+    border-left: none
+}
+#markerSetsModal td {
+    border-top: none
+}
+#markerSetsModal .accordion-body table {
+    margin-bottom: 0
+}
+#markerSetsModal form {
+    margin: 0
+}
+#markerSetsModal form div.form-actions {
+    margin-bottom: 0
+}
+#markerSetsUpdateContainer {
+    display: none
+}
+@media screen and (max-height: 575px) {
+    #sidebarTooltip div.thumbnail {
+        display: none
+    }
+    #sidebarTooltip .minimal {
+        display: block
+    }
+    #sidebarTooltip li.minimal {
+        display: list-item
+    }
+}
+@media screen and (max-height: 685px) {
+    #sidebarFooter {
+        display: none
+    }
+}
+@media screen and (max-height: 735px) {
+    #sidebar.tip-open #sidebarToggles,
+    #sidebar.editor-open #sidebarToggles {
+        display: none
+    }
+    #sidebar.tip-open div.sidebarPane,
+    #sidebar.editor-open div.sidebarPane {
+        top: 254px
+    }
+}
+@media screen and (min-height: 735px) {
+    #sidebar.tip-open div.sidebarPane,
+    #sidebar.editor-open div.sidebarPane {
+        top: 408px
+    }
+}
+.btn-farm {
+    background-color: #56a857;
+    *background-color: #468847;
+    background-image: -ms-linear-gradient(top, #56a857, #468847);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#56a857), to(#468847));
+    background-image: -webkit-linear-gradient(top, #56a857, #468847);
+    background-image: -o-linear-gradient(top, #56a857, #468847);
+    background-image: -moz-linear-gradient(top, #56a857, #468847);
+    background-image: linear-gradient(top, #56a857, #468847);
+    background-repeat: repeat-x;
+    border-color: #468847 #468847 #306830;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid: dximagetransform.microsoft.gradient(startColorstr='#56a857', endColorstr='#468847', GradientType=0);
+    filter: progid: dximagetransform.microsoft.gradient(enabled=false)
+}
+.btn-farm:hover,
+.btn-farm:active,
+.btn-farm.active,
+.btn-farm.disabled,
+.btn-farm[disabled] {
+    background-color: #468847;
+    *background-color: #306830
+}
+.btn-farm:active,
+.btn-farm.active {
+    background-color: #306830 \9
+}
+.btn-industrial {
+    background-color: #fff000;
+    *background-color: #e8e000;
+    background-image: -ms-linear-gradient(top, #fff000, #e8e000);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff000), to(#e8e000));
+    background-image: -webkit-linear-gradient(top, #fff000, #e8e000);
+    background-image: -o-linear-gradient(top, #fff000, #e8e000);
+    background-image: -moz-linear-gradient(top, #fff000, #e8e000);
+    background-image: linear-gradient(top, #fff000, #e8e000);
+    background-repeat: repeat-x;
+    border-color: #fff000 #fff000 #e8e000;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid: dximagetransform.microsoft.gradient(startColorstr='#fff000', endColorstr='#e8e000', GradientType=0);
+    filter: progid: dximagetransform.microsoft.gradient(enabled=false);
+    color: #000;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25)
+}
+.btn-industrial:hover,
+.btn-industrial:active,
+.btn-industrial.active,
+.btn-industrial.disabled,
+.btn-industrial[disabled] {
+    background-color: #e8e000;
+    *background-color: #fff000
+}
+.btn-industrial:active,
+.btn-industrial.active {
+    background-color: #e8e000 \9;
+    color: rgba(0, 0, 0, 0.75)
+}
+.btn-industrial .caret {
+    border-top-color: #000;
+    border-bottom-color: #000;
+    opacity: .75;
+    filter: alpha(opacity=75)
+}
+.btn-industrial:hover {
+    color: #000;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.25)
+}
+.btn-group.open .btn-farm.dropdown-toggle {
+    background-color: #468847
+}
+.btn-group.open .btn-industrial.dropdown-toggle {
+    background-color: #fff000
+}
+.btn-farm .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    opacity: .75;
+    filter: alpha(opacity=75)
+}
+.btn-farm,
+.btn-farm:hover {
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+}
+.btn-farm.active {
+    color: rgba(255, 255, 255, 0.75)
+}
